@@ -27,6 +27,7 @@ python3 spotify_auth.py and access http://localhost:3000 with your browser to au
 
 ## Include Example
 
-  from app
-  play_uri('spotify:track:5ECpVZ4c6AndofTaPdtZtV')
+from app
+
+play_uri('spotify:track:5ECpVZ4c6AndofTaPdtZtV')
 
