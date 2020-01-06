@@ -10,10 +10,21 @@ from pytify.core import read_config
 from pytify.core import play
 
 
-_auth = authenticate(read_config())
 
-# with arguments_data_manager = DataManager()
-if len(sys.argv) > 1:
+
+def init():
+    if len(sys.argv) > 1:
+        spotifyuri = sys.argv[1]
+        play_uri(spotifyuri)
+    else:
+        print("ERROR: SpotifyURL Parameter missing!")
+        exit()
+
+def play_uri(spotifyuri):
+
+    _auth = authenticate(read_config())
+
+
     print("SporitfyConnect")
     spotifyuri = sys.argv[1]
     tracklist=[]
@@ -33,8 +44,7 @@ if len(sys.argv) > 1:
     print("Start playing!")
     play(tracklist, _auth)
     exit()
-else:
-    print("ERROR: SpotifyURL Parameter missing!")
-    exit()
 
+if __name__ == '__main__':
+    init()
     
