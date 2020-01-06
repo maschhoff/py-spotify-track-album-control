@@ -10,7 +10,6 @@ https://github.com/paulorodriguesxv/python-spotify-remote-control
 
 pip install -r requirements.txt
 
-
 ## Create a Spotify APP:
     - https://developer.spotify.com/dashboard/login
     - Create a new App
@@ -24,4 +23,9 @@ python3 spotify_auth.py and access http://localhost:3000 with your browser to au
 
 python3 app.py spotify:track:5ECpVZ4c6AndofTaPdtZtV
 python3 app.py spotify:album:5ECpVZ4c6AndofTaPdtZtV
+
+## Include Example
+
+from app
+play_uri('spotify:track:5ECpVZ4c6AndofTaPdtZtV')
 
