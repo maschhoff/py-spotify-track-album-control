@@ -10,9 +10,11 @@ https://github.com/paulorodriguesxv/python-spotify-remote-control
 
 pip install -r requirements.txt
 
+
 ## Create a Spotify APP:
     - https://developer.spotify.com/dashboard/login
     - Create a new App
+    - Edit the config.yaml and set client id and secret
     - Edit settings and put http://localhost:3000/callback in Redirect URIs field
 
 ## Authorize app 
