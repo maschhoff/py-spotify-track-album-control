@@ -22,11 +22,9 @@ def init():
 
 def play_uri(spotifyuri):
 
-    _auth = authenticate(read_config())
-
-
+    
     print("SporitfyConnect")
-    spotifyuri = sys.argv[1]
+    _auth = authenticate(read_config())
     tracklist=[]
     if "album" in spotifyuri:
         print('Album')
@@ -35,7 +33,6 @@ def play_uri(spotifyuri):
         tracks=results['items']
         for track in tracks:
             tracklist.append(track['uri'])
-        #print(tracklist)
     elif "track" in spotifyuri:
         print('Track')
         tracklist.append(spotifyuri)
