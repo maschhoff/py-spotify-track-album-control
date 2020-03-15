@@ -15,11 +15,12 @@ from pytify.core import list_devices
 
 
 def init():
-	if len(sys.argv)>1:
+	if len(sys.argv)>2:
 		spotifyuri=sys.argv[1]
-		play_uri(spotifyuri)
+		spotifydevice=sys.argv[2]
+		play_uri(spotifyuri,spotifydevice)
 	else:
-		print("ERROR:SpotifyURLParametermissing!")
+		print("ERROR: Spotify Parameter missing! url or device_name")
 		exit()
 
 def stop(device_name):
