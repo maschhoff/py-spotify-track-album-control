@@ -21,13 +21,12 @@ python3 spotify_auth.py and access http://localhost:3000 with your browser to au
 
 ## Run Example
 
-`python3 app.py spotify:track:5ECpVZ4c6AndofTaPdtZtV`
+`python3 spotify_remote.py spotify:track:5ECpVZ4c6AndofTaPdtZtV` `device_name`
 
-`python3 app.py spotify:album:5ECpVZ4c6AndofTaPdtZtV`
+`python3 spotify_remote.py spotify:album:5ECpVZ4c6AndofTaPdtZtV` `device_name`
 
 ## Include Example
 
-import app
-
-app.play_uri('spotify:track:5ECpVZ4c6AndofTaPdtZtV')
+import spotify_remote
+spotify_remote.play_uri('spotify:track:5ECpVZ4c6AndofTaPdtZtV','device_name')
 
