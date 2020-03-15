@@ -11,3 +11,5 @@ from .search import search_track
 from .artist import get_artist_albums
 from .album import get_album_tracks
 from .player import play
+from .devices import list_devices
+from .player import playdev
