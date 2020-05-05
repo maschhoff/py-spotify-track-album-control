@@ -31,3 +31,7 @@ import spotify_remote
 
 spotify_remote.play_uri('spotify:track:5ECpVZ4c6AndofTaPdtZtV','device_name')
 
+# donate
+Buy me a Pizza -> https://www.buymeacoffee.com/maschhoff
+
+
